@@ -1,0 +1,41 @@
+body {
+    background-image: url("/static/img/backdrop3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.city_data {
+    margin: 0 15% 0 15%;
+}
+
+.divider {
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 10% auto;
+    /* color: #8ab92d; */
+}
+
+.nav-custom {
+    padding: 0 15% 0 15%;
+}
+
+/* .map-img {
+    padding: 10vh 0 10vh 0;
+    margin: 15% 0;
+} */
+
+.theme-color {
+    color: #8ab92d;
+}
+
+.theme-color-blue {
+    color: #004AAD;
+}
+
+.img-fluid {
+    max-width: 70%;
+    height: auto;
+  }
+  

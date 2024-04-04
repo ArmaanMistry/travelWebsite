@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Journey Genius</title>
+    <link rel="icon" href="{{ url_for('static', filename='img/logo-favicon.png') }}" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--CSS============================================= -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="protfolio-wrap">
+
+        <!-- Start Header Area -->
+        <header class="default-header">
+            <nav class="navbar navbar-expand-lg  navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="{{ url_for('static', filename='img/jg-logo.png') }}" style="height: 2.2em;" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white lnr lnr-menu"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end align-items-center"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li><a href="/">Home</a></li>
+                            <!-- <li><a href="/">Must-See</a></li>
+                            <li><a href="/">Newsletter</a></li>
+                            <li><a href="/">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header Area -->
+        <!-- start banner Area -->
+        <section class="banner-area relative" id="home">
+            <div class="overlay overlay-bg"></div>
+            <div class="container">
+                <div class="row fullscreen d-flex align-items-center justify-content-center">
+                    <div class="banner-content col-lg-10">
+                        <h5 class="text-uppercase">Uncover. Explore. Thrive. Repeat.</h5>
+                        <h1>
+                            WOW World!
+                        </h1>
+                        <a href="#nearest-explore" class="primary-btn text-uppercase">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End banner Area -->
+
+        <!-- Feature Card Top -->
+        <div class="feature-cards">
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                    <div class="card">
+                        <div class="card-body" id="nearest-explore">
+                            <h5 class="card-title">Nearest Destination Search</h5>
+                            <p class="card-text">
+                                Embark on a journey of discovery with our Nearest Destination Search feature! Whether
+                                you're a local explorer or visiting a new city, our tool helps you uncover the best
+                                spots nearby. Simply select your city and filter by your interests – whether it's
+                                vibrant nightlife, captivating sights, delectable dining, or exciting shopping. With
+                                just a few clicks, you'll find yourself immersed in the heart of local culture and
+                                excitement. Start exploring today!
+                            </p>
+                            <a href="#nearest" class="btn btn-primary btn-custom">EXPLORE NEAREST PLACES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Similar Destination Search</h5>
+                            <p class="card-text">
+                                Planning your next getaway is a breeze with our Similar Destination Search tool! Just
+                                tell us about a place you love, and we'll uncover similar destinations waiting to be
+                                explored. Whether you're craving sandy beaches, bustling markets, or serene mountains,
+                                we'll find the perfect match for your travel preferences. Let us inspire your wanderlust
+                                and guide you to your next unforgettable adventure!
+                            </p>
+                            <a href="#similar" class="btn btn-primary btn-custom">EXPLORE SIMILAR PLACES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="portfolio-area section-gap" id="portfolio">
+            <div class="container">
+                <!-- Popular Countries -->
+
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10" id="must-see">Must Visit!</h1>
+                            <p>Where Every Destination Becomes a Must-See.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters-content">
+                    <div class="row grid">
+                        <div class="single-portfolio col-sm-4 all corporate">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/cappadocia.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h4>Cappadocia</h4>
+                                    <div class="cat">Turkey</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-portfolio col-sm-4 all personal">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/ladakh.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h4>Ladakh</h4>
+                                    <div class="cat">India</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-portfolio col-sm-4 all agency">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/los-angeles.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h5>Los Angeles</h5>
+                                    <div class="cat">California</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-portfolio col-sm-4 all portal">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/bali.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h5>Bali</h5>
+                                    <div class="cat">Indonesia</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single-portfolio col-sm-4 all corporate">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/dubai.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h4>Dubai</h4>
+                                    <div class="cat">United Arab Emirates</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-portfolio col-sm-4 all personal">
+                            <div class="item">
+                                <img src="{{ url_for('static', filename='img/places/japan.jpg') }}" alt="Work 1">
+                                <div class="p-inner">
+                                    <h4>Japan</h4>
+                                    <div class="cat">Country in East Asia</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start portfolio-area Area -->
+        <section class="portfolio-area section-gap" id="portfolio">
+            <div class="container">
+                <div class="row d-flex justify-content-center" id="nearest">
+                    <div class="menu-content col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Nearest Destination Search</h1>
+                            <p>Explore Nearby Wonders Instantly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nearest Destinations -->
+
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <form action="/get_data" method="POST" class="custom-form">
+                                <div class="form-group">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect" name="pCity">
+                                        <option selected disabled>SELECT CITY</option>
+                                        <option value="Bangalore">Bangalore</option>
+                                        <option value="Barcelona">Barcelona</option>
+                                        <option value="Berlin">Berlin</option>
+                                        <option value="Dallas">Dallas</option>
+                                        <option value="London">London</option>
+                                        <option value="New York">New York</option>
+                                        <option value="Paris">Paris</option>
+                                        <option value="San Francisco">San Francisco</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="visually-hidden" for="autoSizingInputGroup">0-20 km</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">Radius</div>
+                                        <input type="text" class="form-control" id="autoSizingInputGroup"
+                                            placeholder="0-20 km" name="pRadius">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect" name="pCategory">
+                                        <option selected disabled>SELECT ACTIVITY</option>
+                                        <option value="NIGHTLIFE">Night Life</option>
+                                        <option value="SIGHTS">Sights</option>
+                                        <option value="SHOPPING">Shopping</option>
+                                        <option value="RESTAURANT">Restaurants</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-custom">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Extra Space -->
+                <div class="extra-space"></div>
+
+                <!-- Similar Destinations -->
+                <div class="row d-flex justify-content-center" id="similar">
+                    <div class="menu-content col-lg-10">
+                        <div class="title text-center">
+                            <h1 class="mb-10">Similar Destination Search</h1>
+                            <p>Find Your Next Adventure's Twin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <form action="/" method="POST" class="custom-form">
+                                <div class="form-group">
+                                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                                    <select class="form-select" id="autoSizingSelect" name="destination" required>
+                                        <option selected disabled>SELECT DESTINATION</option>
+                                        {% for name in names %}
+                                        <option value="{{ name }}">{{ name }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-custom">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <div id="countrySlider" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{{ url_for('static', filename='img/travellers/barcelona-traveller.jpg') }}"
+                                    class="d-block w-100" alt="Country 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Barcelona</h5>
+                                    <p>"Chillin' in Barcelona, livin' my best life! From jaw-dropping architecture to
+                                        epic food, this city's got it all. #BarcelonaAdventures 🇪🇸🔥"</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/travellers/dubai-traveller.jpg') }}"
+                                    class="d-block w-100" alt="Country 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Dubai</h5>
+                                    <p>"Dubai dreams do come true! 🌟 From towering skyscrapers to desert adventures,
+                                        every moment in this city is pure magic. #DubaiDiaries ✨"</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/travellers/la-traveller.jpg') }}"
+                                    class="d-block w-100" alt="Country 3">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Los Angeles</h5>
+                                    <p>"Feelin' like a real-life GTA V character in Los Angeles! From cruising down
+                                        Sunset Boulevard to soaking up the sun, LA vibes are unreal. #LivingTheGTAVDream
+                                        🌴🚗"</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="{{ url_for('static', filename='img/travellers/berlin-traveller.jpg') }}"
+                                    class="d-block w-100" alt="Country 4">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Berlin</h5>
+                                    <p>"Just touched down in Berlin and already blown away! 🇩🇪✨ From historic
+                                        landmarks to vibrant street art, this city has it all. #BerlinAdventures"</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+
+                            <!-- Add more carousel items here -->
+                        </div>
+                        <a class="carousel-control-prev" href="#countrySlider" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#countrySlider" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End portfolio-area Area -->
+
+        <!-- Jumbotron -->
+        <div class="container my-5" id="newsletter-id">
+            <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5 bg-image">
+                <h1 class="text-body-emphasis">Wanderlust Weekly</h1>
+                <div style="margin: 10px 5% 10px 5%;">
+                    <p>Sign up now for our newsletter, packed with insider tips, unbeatable deals, and updates on
+                        underrated travel destinations, delivered straight to your inbox!</p>
+                </div>
+                <form action="/newsletter_signup" method="POST"> <!-- Update the action attribute -->
+                    <div class="form-floating mb-3" style="margin: 0 20% 0 20%;">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                            name="email"> <!-- Add the name attribute -->
+                        <label for="floatingInput">Email</label>
+                    </div>
+                    <button class="btn btn-primary px-5 mb-5" id="newsletter-btn" type="submit">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- start footer Area -->
+        <footer class="footer-area section-gap" id="footer-id">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>About Us</h6>
+                            <p>
+                                We're passionate about travel. Our mission is to inspire and empower fellow adventurers
+                                to explore the world's wonders, one unforgettable journey at a time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6>Contact Us</h6>
+                            <p>
+                                <strong>Email:</strong> journeygenius@gmail.com <br>
+                                <strong>Contact:</strong> 654654xxxx <br>
+                                <strong>Office Contact:</strong> 554654xxxx
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                        <div class="single-footer-widget">
+                            <h6>Follow Us</h6>
+                            <p>Let us be social</p>
+                            <div class="footer-social d-flex align-items-center">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-snapchat"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer Area -->
+    </div> 
+
+    <script src="https://kit.fontawesome.com/c58f0a8a02.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/vendor/jquery-2.2.4.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.sticky.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+body {
+    background-image: url("/static/img/backdrop-similar.png"); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Prevent the background from scrolling */
+}
+
+.margin_left_right {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.table-card {
+    margin: 5% 15% 0 15%;
+}
+
+.city_data {
+    margin: 0 15% 0 15%;
+}
+
+.divider {
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 7% auto;
+    /* color: #8ab92d; */
+}
+
+.theme-color {
+    color: #8ab92d;
+}
+
+.theme-color-blue {
+    color: #004AAD;
+}
+
+.nav-custom {
+    padding: 0 15% 0 15%;
+}
+
+.second-heading {
+    margin: 5% 15% 5% 15%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
